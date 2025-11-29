@@ -1,0 +1,7 @@
+cat > config/cloud_dev.yaml << 'EOF'
+app:
+  profile: "cloud_dev"
+
+database:
+  url: "postgresql+psycopg2://cardiac_user:cardiac_password@db:5432/cardiac_db"
+EOF

@@ -1,0 +1,9 @@
+cat > config/base.yaml << 'EOF'
+app:
+  name: "IS Cardiac Agent Backend"
+  log_level: "info"
+
+database:
+  # Overridden by DATABASE_URL in env for most cases.
+  url: "sqlite:///./local.db"
+EOF

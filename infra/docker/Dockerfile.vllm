@@ -1,0 +1,6 @@
+cat > infra/docker/Dockerfile.vllm << 'EOF'
+# Placeholder Dockerfile for vLLM service (Phase 3+)
+FROM python:3.11-slim
+WORKDIR /app
+CMD ["bash", "-c", "echo 'vLLM service not implemented yet'; sleep infinity"]
+EOF
