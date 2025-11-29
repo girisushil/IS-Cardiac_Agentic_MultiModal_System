@@ -1,4 +1,4 @@
-cat > cloud_backend/src/api/main.py << 'EOF'
+
 from contextlib import asynccontextmanager
 import logging
 import os
@@ -81,4 +81,4 @@ def health_check(db: Session = Depends(get_db)) -> Dict[str, Any]:
         "db": db_status,
         "env": os.getenv("APP_ENV", "unknown"),
     }
-EOF
+

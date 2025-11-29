@@ -1,4 +1,3 @@
-cat > cloud_backend/tests/test_health.py << 'EOF'
 import os
 import sys
 from pathlib import Path
@@ -31,4 +30,4 @@ def test_health_ok() -> None:
     assert data["status"] == "ok"
     assert data["db"] == "reachable"
     assert data["env"] == "test"
-EOF
+

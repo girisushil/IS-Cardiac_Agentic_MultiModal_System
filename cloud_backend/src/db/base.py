@@ -1,4 +1,4 @@
-cat > cloud_backend/src/db/base.py << 'EOF'
+
 import os
 from typing import Generator
 
@@ -33,4 +33,4 @@ def get_db() -> Generator[Session, None, None]:
         yield db
     finally:
         db.close()
-EOF
+
